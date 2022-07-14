@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  font-family: Inter;
+}
+
+.app{
+  display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+  display:flex;
+  align-items: center;
+  height: 100px;
+  padding: 30px 25px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+nav.dark {
+    background-color: #21222A
+}
+
+.nav--logo_text {
+  color: #61DAFB;
+  margin-right: auto;
+}
+
+main {
+  padding: 25px;
+  background: url("..//public/images/reactjs-icon\ 2.png") no-repeat right center;
+}
+
+.main--ul li {
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main--ul li::marker{
+  color: #61DAFB ;
+  font-size: 20px;
+}
+
+main.dark {
+  background-image: url("..//public/images/reactjs-icon 2.png"); 
+  background-color: #282D35;
+  color: white;    
+}
+
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
